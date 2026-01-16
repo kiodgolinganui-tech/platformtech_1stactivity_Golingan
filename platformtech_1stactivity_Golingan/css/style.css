@@ -1,0 +1,196 @@
+/* Cocomelon-inspired bright and playful theme */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Quicksand:wght@400;600;700&display=swap');
+
+:root{
+    --primary:#FF6B35;
+    --secondary:#FFA500;
+    --accent:#FFD500;
+    --bg:#FFF8F0;
+    --text:#2C3E50;
+    --light-blue:#87CEEB;
+    --light-pink:#FFB6C1;
+}
+
+body{
+    font-family: 'Fredoka', sans-serif;
+    background: linear-gradient(135deg, #FFE5CC 0%, #FFF8F0 100%);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Navbar */
+.navbar{
+    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.2);
+}
+.navbar-brand{
+    font-family: 'Fredoka', sans-serif;
+    color: #fff !important;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.nav-link{
+    color: #fff !important;
+    font-weight: 600;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+.nav-link:hover{
+    color: var(--accent) !important;
+    transform: scale(1.05);
+}
+
+/* Header */
+header.bg-light{
+    background: linear-gradient(135deg, var(--light-blue) 0%, var(--light-pink) 100%) !important;
+    border-bottom: 4px solid var(--primary);
+    padding: 3rem 0 !important;
+}
+.avatar{
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid var(--primary);
+    box-shadow: 0 8px 20px rgba(255, 107, 53, 0.3);
+    position: relative;
+}
+.display-5{
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--primary);
+    font-size: 2.5rem;
+}
+.lead{
+    color: var(--text);
+    font-weight: 600;
+}
+
+/* Decorative cross near header */
+.cross-sm{
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+/* Section headings */
+h2{
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+/* Cards */
+.card{
+    background: linear-gradient(135deg, #fff 0%, #FFF8E7 100%);
+    border: 3px solid var(--secondary);
+    border-radius: 20px;
+    color: var(--text);
+    box-shadow: 0 6px 15px rgba(255, 165, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(255, 107, 53, 0.25);
+}
+.card-title{
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+.card-text{
+    color: var(--text);
+}
+
+/* Form */
+.form-label{
+    font-weight: 600;
+    color: var(--primary);
+}
+.form-control{
+    background: #fff;
+    border: 2px solid var(--secondary);
+    color: var(--text);
+    border-radius: 12px;
+    padding: 0.7rem 1rem;
+    font-family: 'Quicksand', sans-serif;
+    transition: 0.3s;
+}
+.form-control:focus{
+    box-shadow: 0 0 0 0.2rem rgba(255, 107, 53, 0.25);
+    border-color: var(--primary);
+}
+
+/* Button */
+.btn-outline-primary{
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    font-weight: 700;
+    border-radius: 25px;
+    padding: 0.6rem 1.5rem;
+    transition: 0.3s;
+}
+.btn-outline-primary:hover{
+    background: var(--primary);
+    color: #fff;
+    transform: scale(1.05);
+}
+.btn-outline-light{
+    color: #fff;
+    border: 2px solid #fff;
+    font-weight: 700;
+    border-radius: 25px;
+    padding: 0.6rem 1.5rem;
+    transition: 0.3s;
+}
+.btn-outline-light:hover{
+    background: #fff;
+    color: var(--primary);
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer{
+    border-top: 4px solid var(--primary);
+    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+    color: #fff;
+}
+
+/* Metallic/bright accent */
+.metallic{
+    color: var(--primary);
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(255, 107, 53, 0.2);
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px){
+    .container.d-flex{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .avatar{
+        margin-bottom: 1.5rem;
+        width: 120px;
+        height: 120px;
+    }
+    .display-5{
+        font-size: 1.8rem;
+    }
+}
+
+/* Subtle colorful title underline */
+.header-underline{
+    display: inline-block;
+    height: 4px;
+    width: 80px;
+    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+    margin-top: 0.6rem;
+    border-radius: 2px;
+}
